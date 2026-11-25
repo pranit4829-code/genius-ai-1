@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius AI | Your Intelligent Partner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">✦ Genius AI</div>
+        <p class="menu-label">MAIN MENU</p>
+
+        <nav>
+            <button class="nav-btn active" data-page="dashboard">⌂ Dashboard</button>
+            <button class="nav-btn" data-page="chat">✧ Genius Chat</button>
+            <button class="nav-btn" data-page="study">▣ Genius Study</button>
+            <button class="nav-btn" data-page="tutor">◇ Genius Tutor</button>
+            <button class="nav-btn" data-page="builder">⚒ Genius Builder</button>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="profile-icon">G</div>
+            <div>
+                <strong>Genius AI</strong>
+                <p>Your intelligence partner.</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="welcome-small">YOUR PERSONAL AI PLATFORM</p>
+                <h2 id="pageTitle">Dashboard</h2>
+            </div>
+            <div class="status">
+                <span class="status-dot"></span> SYSTEM ONLINE
+            </div>
+        </header>
+
+        <!-- DASHBOARD -->
+        <section class="page active" id="dashboard">
+
+            <div class="hero">
+                <p class="eyebrow">WELCOME TO YOUR AI WORLD</p>
+                <h1>Think Bigger.<br> Create Smarter.</h1>
+                <p>Welcome to Genius AI. What would you like to accomplish today?</p>
+                <button class="primary-btn" data-go="chat">Start Exploring →</button>
+            </div>
+
+            <div class="section-heading">
+                <h2>Your AI Tools</h2>
+                <p>Everything you need, in one place.</p>
+            </div>
+
+            <div class="tool-grid">
+
+                <div class="tool-card blue">
+                    <div class="tool-icon">💬</div>
+                    <h3>Genius Chat</h3>
+                    <p>Ask questions and get intelligent answers.</p>
+                    <button class="card-btn" data-go="chat">Explore Chat →</button>
+                </div>
+
+                <div class="tool-card purple">
+                    <div class="tool-icon">📚</div>
+                    <h3>Genius Study</h3>
+                    <p>Create notes, papers and study materials.</p>
+                    <button class="card-btn" data-go="study">Explore Study →</button>
+                </div>
+
+                <div class="tool-card cyan">
+                    <div class="tool-icon">🎓</div>
+                    <h3>Genius Tutor</h3>
+                    <p>Learn difficult topics step by step.</p>
+                    <button class="card-btn" data-go="tutor">Explore Tutor →</button>
+                </div>
+
+                <div class="tool-card orange">
+                    <div class="tool-icon">🛠️</div>
+                    <h3>Genius Builder</h3>
+                    <p>Turn your ideas into exciting projects.</p>
+                    <button class="card-btn" data-go="builder">Explore Builder →</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHAT -->
+        <section class="page" id="chat">
+            <div class="content-card">
+                <div class="tool-icon">💬</div>
+                <h1>Genius Chat</h1>
+                <p>Your intelligent conversation space.</p>
+
+                <div class="chat-box" id="chatBox">
+                    <div class="message bot">
+                        Hello! Welcome to Genius Chat. What would you like to discuss?
+                    </div>
+                </div>
+
+                <form class="input-area" id="chatForm">
+                    <input id="userInput" type="text"
+                        placeholder="Ask Genius AI anything..." autocomplete="off">
+                    <button class="primary-btn" type="submit">Send ➤</button>
+                </form>
+                <p class="notice">Demo mode: AI responses will be connected in a future lesson.</p>
+            </div>
+        </section>
+
+        <!-- STUDY -->
+        
+<section class="page" id="study">
+    <div class="content-card">
+
+        <div class="tool-icon">📚</div>
+        <h1>Genius Study</h1>
+        <p>Your personal study workspace.</p>
+
+        <div class="notes-area">
+
+            <h2>📝 Smart Notes</h2>
+            <p>Create and organise your notes easily.</p>
+
+            <input
+                type="text"
+                id="noteTitle"
+                placeholder="Enter note title..."
+            >
+
+            <textarea
+                id="noteContent"
+                placeholder="Start writing your notes here..."
+                rows="7"
+            ></textarea>
+
+            <button class="primary-btn" id="saveNote">
+                + Save Note
+            </button>
+
+            <h2 class="saved-heading">Your Saved Notes</h2>
+
+            <div id="notesList">
+                <p>Your notes will appear here.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+            <div class="content-card">
+                <div class="tool-icon">📚</div>
+                <h1>Genius Study</h1>
+                <p>Your personal study workspace.</p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>📝 Smart Notes</h3>
+                        <p>Organise your learning notes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📄 Question Papers</h3>
+                        <p>Prepare practice question papers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🧠 Revision Hub</h3>
+                        <p>Organise your revision sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TUTOR -->
+        <section class="page" id="tutor">
+            <div class="content-card">
+                <div class="tool-icon">🎓</div>
+                <h1>Genius Tutor</h1>
+                <p>Learn anything, one step at a time.</p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>📖 Topic Learning</h3>
+                        <p>Break difficult topics into simple lessons.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>✏️ Practice</h3>
+                        <p>Build confidence with practice exercises.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🏆 Progress</h3>
+                        <p>Keep track of your learning journey.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BUILDER -->
+        <section class="page" id="builder">
+            <div class="content-card">
+                <div class="tool-icon">🛠️</div>
+                <h1>Genius Builder</h1>
+                <p>Where imagination becomes innovation.</p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>💡 Idea Studio</h3>
+                        <p>Organise and develop creative ideas.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🌐 Website Creator</h3>
+                        <p>Plan your next website project.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🚀 Project Lab</h3>
+                        <p>Explore your next big project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>© 2026 Genius AI · Think Bigger. Create Smarter.</footer>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
